@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysql
+  namespace: bijouterie
+  labels:
+    app: bijouterie
+    tier: database
+spec:
+  type: ClusterIP
+  selector:
+    app: bijouterie
+    tier: database
+  ports:
+    - name: mysql
+      port: 3306
+      targetPort: 3306
