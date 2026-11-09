@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: mysql
-          image: cerv08/bijouterie-mysql:6
+          image: cerv08/bijouterie-mysql:7
           ports:
             - containerPort: 3306
           envFrom:
