@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: cerv08/bijouterie-frontend:12
+          image: cerv08/bijouterie-frontend:13
           ports:
             - containerPort: 80
           envFrom:
